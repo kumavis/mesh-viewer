@@ -13,7 +13,7 @@ function Mesh(shell, baseMesh, modelMatrix) {
 }
 
 Mesh.prototype.update = function updateMesh(params) {
-  var options = shell._defaultOptions
+  var options = this.shell._defaultOptions
   this.mesh.update({
     cells: params.cells,
     positions: params.positions,
